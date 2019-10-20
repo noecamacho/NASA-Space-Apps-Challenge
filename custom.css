@@ -1,0 +1,201 @@
+body {
+  /*Account for the navbar*/
+  /* padding-top: 3.5rem; */
+  padding-top: 0px;
+  overflow: hidden;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.card.globe-card.interactive {
+  height: 90vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.bg-dark {
+  background-color: rgba(0, 0, 255, 0) !important;
+}
+
+.globe {
+  width: 100%;
+  /* height: calc(100vh - 3.5rem); */
+  height: 100vh;
+  background-color: black;
+}
+
+.globe-overlay {
+  position: absolute;
+  top: 3.5rem;
+}
+
+.globe-card {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.globe-button {
+  /* background: rgba(255, 255, 255, 0.25); */
+  background-color: red;
+
+}
+
+.globe-button.p-0 {
+  border-radius: 1.2rem 0px 0px 1.2rem;
+  border-left-width: 0px;
+  width: 50px;
+  height: 50px;
+}
+
+.card-body>p {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-link {
+  color:black !important;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1.2rem;
+}
+
+.nav-link:hover {
+  background: white;
+}
+
+.nav-item {
+  padding-right: 10px;
+  text-align: center;
+}
+
+.globe-dropdown {
+  background: rgba(255, 255, 255, 0.25);
+  width: 50px;
+}
+
+button.btn-sm:nth-child(1) {
+  width: 50px;
+}
+
+.btn-primary {
+  background-color: rgba(0, 0, 255, 0) !important;
+}
+
+#searchButton,
+#searchText {
+  border-radius: 1.25rem;
+}
+
+.modal-footer > button:nth-child(1){
+  color:black;
+}
+
+
+/*When the modal fills the screen it has no margin on top and bottom*/
+
+/*Centers the modal*/
+
+.modal-dialog {
+  margin: 0 auto;
+}
+
+/*Sets the maximum height of the entire modal to 100% of the screen height*/
+
+.modal-content {
+  max-height: 100vh;
+}
+
+/*Sets the maximum height of the modal body to 90% of the screen height*/
+
+.modal-body {
+  max-height: 90vh;
+}
+
+/*Sets the height of a modal's canvas to 30% or 200px*/
+
+.modal-body-canvas {
+  max-height: 200px;
+  height: 30vh;
+}
+
+/*Sets the height of a modal's canvas to 60% minus the height of a footer*/
+
+.modal-body-table {
+  max-height: calc(60vh - 71px);
+  overflow-y: auto;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {
+  .card-columns {
+    column-count: 1;
+  }
+
+  /* div#main-menu.navbar-collapse.collapse.show {
+    background-color: rgba(83, 83, 83, 0.897) !important;
+  }
+  button.navbar-toggler.collapsed  {
+    background-color: rgba(10, 10, 255, 0.897) !important;
+  } */
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+.noninteractive {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  pointer-events: none;
+}
+
+.interactive {
+  -webkit-touch-callout: auto !important;
+  -webkit-user-select: auto !important;
+  -khtml-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  -o-user-select: auto !important;
+  pointer-events: auto !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
